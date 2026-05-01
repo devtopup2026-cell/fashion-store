@@ -10,7 +10,7 @@
 <body>
 
 <header>
-  <div class="logo">My Fashion</div>
+  <div class="logo">Luxury Fashion</div>
   <nav>
     <a href="#">หน้าแรก</a>
     <a href="#">สินค้า</a>
@@ -20,78 +20,101 @@
 
 <section class="hero">
   <h1>คอลเลคชั่นใหม่ 2026</h1>
-  <p>แฟชั่น & เครื่องสำอางสุดฮิต</p>
-  <button>เลือกซื้อสินค้า</button>
+  <p>แฟชั่นผู้หญิง • เครื่องสำอาง • กระเป๋า</p>
+  <button onclick="scrollToProducts()">เลือกซื้อสินค้า</button>
 </section>
 
-<section class="products">
+<section class="products" id="products">
   <h2>สินค้าแนะนำ</h2>
 
   <div class="grid">
 
+    <!-- PRODUCT 1 -->
     <div class="card">
       <img src="images/item1.jpg">
       <h3>ลิปสติก Luxury</h3>
       <p class="price">฿199</p>
-      <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
+      <button onclick="order()">สั่งซื้อ</button>
     </div>
 
+    <!-- PRODUCT 2 -->
     <div class="card">
       <img src="images/item2.jpg">
       <h3>เสื้อแฟชั่น</h3>
       <p class="price">฿490</p>
-      <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
+      <button onclick="order()">สั่งซื้อ</button>
     </div>
-    
-<div class="card">
-  <img src="images/item3.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
-        
-<div class="card">
-  <img src="images/item4.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
-        
-<div class="card">
-  <img src="images/item5.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
-        
-<div class="card">
-  <img src="images/item6.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
-        
-<div class="card">
-  <img src="images/item7.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <<button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
-        
-<div class="card">
-  <img src="images/item8.jpg">
-  <h3>กระเป๋าแฟชั่น</h3>
-  <p class="price">฿890</p>
-  <button onclick="window.open('https://line.me/', '_blank')">สั่งซื้อ</button>
-</div> 
+
+    <!-- PRODUCT 3 -->
+    <div class="card">
+      <img src="images/item3.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="card">
+      <img src="images/item4.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- PRODUCT 5 -->
+    <div class="card">
+      <img src="images/item5.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- PRODUCT 6 -->
+    <div class="card">
+      <img src="images/item6.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- PRODUCT 7 -->
+    <div class="card">
+      <img src="images/item7.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- PRODUCT 8 -->
+    <div class="card">
+      <img src="images/item8.jpg">
+      <h3>กระเป๋าแฟชั่น</h3>
+      <p class="price">฿890</p>
+      <button onclick="order()">สั่งซื้อ</button>
+    </div>
+
+    <!-- COPY เพิ่มสินค้าได้เอง -->
     
   </div>
 </section>
 
 <footer>
-  <p>ติดต่อเรา</p>
-<a href="https://line.me/" target="_blank">LINE</a>
+  <p>© 2026 Luxury Fashion Store</p>
+  <p>LINE: @yourshop | WhatsApp: +66xxxxxxxx</p>
 </footer>
+
+<!-- ปุ่ม LINE ลอย -->
+<a href="https://line.me/" class="line-btn" target="_blank">💬</a>
+
+<script>
+function order() {
+  window.open("https://line.me/", "_blank");
+}
+
+function scrollToProducts() {
+  document.getElementById("products").scrollIntoView({behavior: "smooth"});
+}
+</script>
 
 </body>
 </html>
