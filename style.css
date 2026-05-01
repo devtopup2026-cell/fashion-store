@@ -18,8 +18,8 @@ header {
 }
 
 .logo-img {
-  height: 80px;
-  filter: brightness(2.5) contrast(1.5) saturate(1.2);
+  height: 90px;
+  filter: invert(1) brightness(2);
 }
 
 nav a {
