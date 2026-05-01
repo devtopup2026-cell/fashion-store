@@ -8,14 +8,13 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
-  background: black;
-  color: white;
+  background: linear-gradient(to right, #000000, #2c2c2c);
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+.logo img {
+  height: 50px;
 }
 
 nav a {
