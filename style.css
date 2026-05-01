@@ -7,17 +7,19 @@ body {
 /* HEADER */
 
 header {
-  padding: 20px 60px; /* เพิ่มความหรู */
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 20px;
 }
-
 
 /* LOGO */
 .logo {
-  gap: 15px; /* ระยะห่างโลโก้กับตัวหนังสือ */
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 100px;
+  height: 95px;
 }
 
 /* BRAND NAME */
@@ -35,14 +37,12 @@ header {
 
 /* NAV */
 nav a {
-  color: #222;
-  margin-left: 25px;
-  text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 nav a:hover {
-  color: #d4af37;
+  color: #c9a86a;
 }
 
 
@@ -61,7 +61,6 @@ nav a:hover {
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
   font-weight: 600;
 }
 
