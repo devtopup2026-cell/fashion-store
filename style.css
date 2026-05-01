@@ -58,6 +58,12 @@ nav a:hover {
   background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
+.hero-sub {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #c9a74d;
+}
+
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
@@ -78,6 +84,11 @@ nav a:hover {
   cursor: pointer;
 }
 
+.icon {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
 /* PRODUCTS */
 .products {
   padding: 50px 20px;
@@ -91,12 +102,9 @@ nav a:hover {
 }
 
 .products h2::after {
-  content: "";
-  display: block;
-  width: 40px;
+  width: 60px;
   height: 2px;
-  background: #d4af37;
-  margin: 10px auto;
+  background: #c9a74d;
 }
 
 .grid {
