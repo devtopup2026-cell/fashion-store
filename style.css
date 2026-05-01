@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f8f8f8;
 }
 
@@ -49,12 +49,19 @@ nav a:hover {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
 .hero h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 42px;
+  font-weight: 600;
+}
+
+.hero button {
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .hero button {
@@ -72,6 +79,21 @@ nav a:hover {
   text-align: center;
 }
 
+.products h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.products h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #d4af37;
+  margin: 10px auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -82,7 +104,8 @@ nav a:hover {
   background: white;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
 }
 
 .card img {
@@ -93,6 +116,10 @@ nav a:hover {
 .price {
   color: #e91e63;
   font-weight: bold;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card button {
