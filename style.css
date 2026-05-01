@@ -12,7 +12,7 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  padding: 20px 20px;
+  padding: 15px 10px; /* 🔥 ลด padding */
 }
 
 header {
@@ -94,8 +94,7 @@ nav a:hover {
 /* ================= PRODUCTS ================= */
 
 .products {
-  padding: 60px 20px;
-  text-align: center;
+  padding: 80px 20px; /* จาก 50 → 80 */
 }
 
 .products h2 {
@@ -164,19 +163,19 @@ nav a:hover {
 
 /* BUTTON */
 .card button {
-  margin-top: auto;
-  padding: 10px;
+  margin-top: 10px;
+  padding: 12px;
   background: black;
   color: white;
   border: none;
-  cursor: pointer;
+  letter-spacing: 1px;
   transition: 0.3s;
 }
 
 .card button:hover {
-  background: #c9a86a;
+  background: #c9a86a; /* 🔥 ทอง */
+  color: black;
 }
-
 /* ================= FOOTER ================= */
 
 footer {
