@@ -122,17 +122,16 @@ nav a:hover {
 }
 
 .card img {
-  width: 100%;
-  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 .price {
   color: #e91e63;
   font-weight: bold;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .card button {
