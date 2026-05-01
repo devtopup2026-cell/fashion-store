@@ -10,22 +10,28 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: linear-gradient(to right, #000000, #1a1a1a);
+  background: white;   
+  border-bottom: 1px solid #eee; 
 }
 
 .logo {
   padding: 0;
 }
 
-.logo-img {
-  height: 95px;
-  filter: invert(1) brightness(2);
+.logo img {
+  height: 60px;
+  object-fit: contain;
+  filter: none;   /* สำคัญ */
 }
 
 nav a {
-  color: white;
+  color: black;   /* จาก white → black */
   margin-left: 20px;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: #d4af37; /* สีทองตอน hover */
 }
 
 /* HERO */
