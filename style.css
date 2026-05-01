@@ -9,30 +9,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: white;   
-  border-bottom: 1px solid #eee; 
+  padding: 20px 60px;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.logo {
-  padding: 0;
-}
-
+/* LOGO */
 .logo img {
-  height: 60px;
-  object-fit: contain;
-  filter: none;   /* สำคัญ */
+  height: 90px;
 }
 
+/* NAV */
 nav a {
-  color: black;   /* จาก white → black */
-  margin-left: 20px;
+  color: #222;
+  margin-left: 30px;
   text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #d4af37; /* สีทองตอน hover */
+  color: #d4af37;
 }
+
 
 /* HERO */
 .hero {
