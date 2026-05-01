@@ -9,24 +9,36 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 15px 50px;
   background: white;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #eee;
 }
 
 /* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .logo img {
-  height: 90px;
+  height: 50px;
+}
+
+/* BRAND NAME */
+.brand-name {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #222;
 }
 
 /* NAV */
 nav a {
   color: #222;
-  margin-left: 30px;
+  margin-left: 25px;
   text-decoration: none;
   font-size: 14px;
-  letter-spacing: 1px;
-  transition: 0.3s;
 }
 
 nav a:hover {
