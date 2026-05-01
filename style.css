@@ -94,7 +94,8 @@ nav a:hover {
 /* ================= PRODUCTS ================= */
 
 .products {
-  padding: 80px 20px; /* จาก 50 → 80 */
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .products h2 {
