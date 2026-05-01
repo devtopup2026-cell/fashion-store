@@ -26,11 +26,16 @@ header {
 }
 
 /* BRAND NAME */
-.brand-name {
-  font-size: 16px;
+.brand-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
   letter-spacing: 2px;
-  font-weight: 500;
-  color: #222;
+}
+
+.brand-sub {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #999;
 }
 
 /* NAV */
