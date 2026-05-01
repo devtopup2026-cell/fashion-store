@@ -5,17 +5,15 @@ body {
 }
 
 /* HEADER */
+
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 20px 60px; /* เพิ่มความหรู */
 }
+
 
 /* LOGO */
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 15px; /* ระยะห่างโลโก้กับตัวหนังสือ */
 }
 
 .logo img {
