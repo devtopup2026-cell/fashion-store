@@ -184,14 +184,12 @@ nav a:hover {
 /* POPUP */
 /* MODAL BACKGROUND */
 .modal {
-  display: none;
+  display: none; /* ❗ ต้องมีอันเดียว */
   position: fixed;
   inset: 0;
   z-index: 9999;
   background: rgba(0,0,0,0.85);
 
-  /* บังคับ layout */
-  display: flex;
   justify-content: center;
   align-items: center;
 }
