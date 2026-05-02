@@ -159,10 +159,10 @@ function order() {
 }
 function openModal(src) {
   const modal = document.getElementById("imgModal");
-  modal.style.display = "flex";
-  modal.style.justifyContent = "center";
-  modal.style.alignItems = "center";
-  document.getElementById("modalImg").src = src;
+  const img = document.getElementById("modalImg");
+
+  img.src = src;
+  modal.style.display = "flex"; // 👈 คุมตรงนี้
 }
 
 function closeModal() {
