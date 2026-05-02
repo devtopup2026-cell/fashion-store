@@ -199,6 +199,7 @@ nav a:hover {
   max-height: 80%;
   object-fit: contain;
   border-radius: 12px;
+  animation: zoom 0.25s ease;
 }
 
 .close {
@@ -208,6 +209,17 @@ nav a:hover {
   font-size: 35px;
   color: white;
   cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* ================= FOOTER ================= */
