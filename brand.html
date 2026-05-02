@@ -74,6 +74,7 @@ nav a:hover {
   height: 280px;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card button {
@@ -101,6 +102,37 @@ nav a:hover {
   padding: 15px;
   border-radius: 50%;
   text-decoration: none;
+}
+
+/* ===== 🔥 MODAL FIX (สำคัญที่สุด) ===== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 70%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
 }
 
 </style>
@@ -157,12 +189,13 @@ nav a:hover {
 function order() {
   window.open("https://line.me/", "_blank");
 }
+
 function openModal(src) {
   const modal = document.getElementById("imgModal");
   const img = document.getElementById("modalImg");
 
   img.src = src;
-  modal.style.display = "flex"; // ใช้อันนี้
+  modal.style.display = "flex";
 }
 
 function closeModal() {
@@ -170,11 +203,11 @@ function closeModal() {
 }
 </script>
 
-<!-- POPUP IMAGE -->
+<!-- POPUP -->
 <div id="imgModal" class="modal" onclick="closeModal()">
   <span class="close">&times;</span>
   <img class="modal-content" id="modalImg" onclick="event.stopPropagation()">
 </div>
-  
+
 </body>
 </html>
