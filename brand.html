@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>รับหิ้วสินค้าแบรนด์</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #222;
+}
+
+nav a:hover {
+  color: #c9a74d;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #333;
+}
+
+/* LINE BUTTON */
+.line-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #06C755;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png">
+  </div>
+
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="#">สินค้า</a>
+    <a href="#">เกี่ยวกับ</a>
+    <a href="brand.html">รับหิ้วแบรนด์</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>รับหิ้วสินค้าแบรนด์</h1>
+  <p>ของแท้ 100% • หิ้วจากต่างประเทศ • สั่งง่าย</p>
+</section>
+
+<section class="grid">
+
+  <div class="card">
+    <img src="images/item10.jpg">
+    <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item11.jpg">
+    <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item12.jpg">
+    <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
+  </div>
+
+  <div class="card">
+    <img src="images/item13.jpg">
+    <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
+  </div>
+
+</section>
+
+<a href="https://line.me/" class="line-btn" target="_blank">💬</a>
+
+<script>
+function order() {
+  window.open("https://line.me/", "_blank");
+}
+</script>
+
+</body>
+</html>
