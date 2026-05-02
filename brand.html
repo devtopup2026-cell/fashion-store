@@ -130,22 +130,22 @@ nav a:hover {
 <section class="grid">
 
   <div class="card">
-    <img src="images/item10.jpg">
+    <img src="images/item10.jpg" onclick="openModal(this.src)">
     <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
   </div>
 
   <div class="card">
-    <img src="images/item11.jpg">
+    <img src="images/item11.jpg" onclick="openModal(this.src)">
     <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
   </div>
 
   <div class="card">
-    <img src="images/item12.jpg">
+    <img src="images/item12.jpg" onclick="openModal(this.src)">
     <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
   </div>
 
   <div class="card">
-    <img src="images/item13.jpg">
+    <img src="images/item13.jpg" onclick="openModal(this.src)">
     <button onclick="order()">สั่งซื้อ / ติดต่อ</button>
   </div>
 
@@ -156,6 +156,14 @@ nav a:hover {
 <script>
 function order() {
   window.open("https://line.me/", "_blank");
+}
+  function openModal(src) {
+  document.getElementById("imgModal").style.display = "block";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
 }
 </script>
 
