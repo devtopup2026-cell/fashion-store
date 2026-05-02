@@ -158,7 +158,10 @@ function order() {
   window.open("https://line.me/", "_blank");
 }
 function openModal(src) {
-  document.getElementById("imgModal").style.display = "flex"; // 👈 เปลี่ยนตรงนี้
+  const modal = document.getElementById("imgModal");
+  modal.style.display = "flex";
+  modal.style.justifyContent = "center";
+  modal.style.alignItems = "center";
   document.getElementById("modalImg").src = src;
 }
 
